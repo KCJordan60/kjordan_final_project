@@ -15629,6 +15629,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\kevin\\CDIM 3312\\kjordan_final_project\\Pages\\Projects\\OwnerCreate.cshtml",
+      "TargetPath": "Pages\\Projects\\OwnerCreate.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\kevin\\CDIM 3312\\kjordan_final_project\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Pages\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
@@ -15639,13 +15644,48 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\kevin\\CDIM 3312\\kjordan_final_project\\Pages\\Projects\\Create.cshtml",
+      "TargetPath": "Pages\\Projects\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\kevin\\CDIM 3312\\kjordan_final_project\\Pages\\Projects\\OwnerIndex.cshtml",
+      "TargetPath": "Pages\\Projects\\OwnerIndex.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\kevin\\CDIM 3312\\kjordan_final_project\\Pages\\_ViewImports.cshtml",
       "TargetPath": "Pages\\_ViewImports.cshtml",
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\kevin\\CDIM 3312\\kjordan_final_project\\Pages\\Projects\\Delete.cshtml",
+      "TargetPath": "Pages\\Projects\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\kevin\\CDIM 3312\\kjordan_final_project\\Pages\\Projects\\Edit.cshtml",
+      "TargetPath": "Pages\\Projects\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\kevin\\CDIM 3312\\kjordan_final_project\\Pages\\Projects\\AllocationIndex.cshtml",
+      "TargetPath": "Pages\\Projects\\AllocationIndex.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\kevin\\CDIM 3312\\kjordan_final_project\\Pages\\Projects\\Details.cshtml",
+      "TargetPath": "Pages\\Projects\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\kevin\\CDIM 3312\\kjordan_final_project\\Pages\\Privacy.cshtml",
       "TargetPath": "Pages\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\kevin\\CDIM 3312\\kjordan_final_project\\Pages\\Projects\\Index.cshtml",
+      "TargetPath": "Pages\\Projects\\Index.cshtml",
       "FileKind": "mvc"
     },
     {

@@ -22,7 +22,7 @@ namespace kjordan_final_project
                 var services = scope.ServiceProvider;
                 try
                 {
-                    SeedData.Initialize(services);
+                    SeedData.InitializeDb(services);
                 }
                 catch (Exception ex)
                 {

@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Collections.Generic;
 
-//This creates the entities in the database 
+//This creates the entities in the database for the Projects entered
 namespace kjordan_final_project.Model
 {
     public class Project
@@ -12,22 +12,15 @@ namespace kjordan_final_project.Model
 
         [MaxLength(30)]
         [Display(Name = "Project Name")]
+        [Required]
         public string ProjName {get; set;}
 
         [Display(Name = "Description")]
-        [StringLength(60, MinimumLength = 3)]
         [Required]
         public string ProjDisc {get; set;}
 
-        [Display(Name = "Start Date")]
-        [DataType(DataType.Date)]
-        public DateTime StartDate {get; set;}
+        public int OwnerId {get; set;}
 
-        [Display(Name = "End Date")]
-        [DataType(DataType.Date)]
-        public DateTime EndDate {get; set;}
-
-               
-               
+        public Owner Owner {get; set;}
     }
 }

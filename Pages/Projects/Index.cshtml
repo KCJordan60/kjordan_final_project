@@ -1,0 +1,75 @@
+@page
+@model kjordan_final_project.Pages.Projects.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Project Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                
+              @Html.DisplayNameFor(model => model.Project[0].ProjName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Project[0].ProjDisc)
+            </th>
+            <th>
+                @{
+                    var firstSort = "owner_asc";
+                    if(Model.CurrentSort == "owner_asc")
+                    {
+                        firstSort = "owner_dsc";
+                    }
+                }
+                <a asp-page="./Index" asp-route-CurrentSort="@firstSort">@Html.DisplayNameFor(model => model.Project[0].Owner)</a>
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Project) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProjName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProjDisc)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Owner.FirsName)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.ProjectID">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.ProjectID">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.ProjectID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+<hr/>
+
+@{
+    var prevDisable = "";
+    if(Model.PageNum <= 1)
+    {
+        prevDisable = "disabled";
+    }
+    
+}
+
+<nav aria-label="Page navigation example">
+  <ul class="pagination">
+    <li class="page-item @prevDisable"><a class="page-link" asp-page="./Index" asp-route-PageNum="@(Model.PageNum - 1)">Previous</a></li>
+    
+    <li class="page-item"><a class="page-link" asp-page="./Index" asp-route-PageNum="@(Model.PageNum + 1)">Next</a></li>
+  </ul>
+</nav>

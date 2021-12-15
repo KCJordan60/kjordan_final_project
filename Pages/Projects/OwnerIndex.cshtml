@@ -1,0 +1,44 @@
+@page
+@model Projects.OwnerIndexModel
+
+@{
+    ViewData["Title"] = "Owner Index";
+}
+@* This is the Owner razor page I created to list all the owners and linked the create owner page *@
+<div>
+    <h1>Owner Index</h1>
+    <p><a asp-page="OwnerCreate">Create Owner</a></p>
+
+    <thead>
+    <table class="table">
+        <tr>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Location</th>
+        </tr>
+        </thead>
+
+    <tbody>
+    @foreach (var o in Model.Owners)
+    {
+        <tr scope="row">
+            <td>
+                @Html.DisplayFor(modelItem => o.FirsName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => o.LastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => o.Location)
+            </td>
+                        
+        </tr>
+        
+        }
+        </tbody>
+
+    </table>
+    
+
+    
+</div>

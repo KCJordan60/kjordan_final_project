@@ -1,0 +1,56 @@
+@page
+@model Projects.AllocationIndexModel
+
+@{
+    ViewData["Title"] = "Time Allocation Index";
+}
+
+<div>
+    @* This cretates the razor page for my Time Allocation DB *@
+    <h1>Time Allocation Index</h1>
+    <p><a asp-page="OwnerCreate">Create Owner</a></p>
+
+    <thead>
+    <table class="table">
+        <tr>
+            <th scope="col">Project</th>
+            <th scope="col">Owner</th>
+            <th scope="col">Work Date</th>
+            <th scope="col">Onsite Time</th>
+            <th scope="col">Comm Time</th>
+            <th scope="col">Admin Time<th>
+        </tr>
+        </thead>
+
+    <tbody>
+    @foreach (var ta in Model.Allocations)
+    {
+        <tr scope="row">
+            <td>
+                @Html.DisplayFor(modelItem => ta.Project)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => ta.Owner)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => ta.WorkDate)
+            </td>
+             <td>
+                @Html.DisplayFor(modelItem => ta.OnsiteTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => ta.CommTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => ta.AdminTime)
+            </td>
+        </tr>
+        
+        }
+        </tbody>
+
+    </table>
+    
+
+    
+</div>
